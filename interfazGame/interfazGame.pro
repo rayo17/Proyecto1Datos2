@@ -11,13 +11,16 @@ CONFIG += c++11
 SOURCES += \
     juego.cpp \
     main.cpp \
+    pantallagame.cpp \
     widget.cpp
 
 HEADERS += \
     juego.h \
+    pantallagame.h \
     widget.h
 
 FORMS += \
+    pantallagame.ui \
     widget.ui
 
 # Default rules for deployment.
