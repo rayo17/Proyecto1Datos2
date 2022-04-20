@@ -35,8 +35,8 @@ void Widget::on_start_clicked()//eventos empezar juego
         QTextStream stream (Csocket);
          QMessageBox::information(this,"cliente","cliente conectaco");
          //enviarNombreJugador1(stream,ui->name1->text());
-         datosEnviados.setnombre1(ui->name1->text());
-         stream<<datosEnviados.getnombre1();
+         //datosEnviados.setnombre1(ui->name1->text());
+         //stream<<datosEnviados.getnombre1();
 
          game=new Juego;// objeto juego
 
