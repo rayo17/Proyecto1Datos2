@@ -67,7 +67,7 @@ void Juego::resultadoFinal(){
 
 }
 void Juego::conectTarjetas(){
-    cout<<"conectartarjetas"<<endl;
+    //se conectan los botones y cuando son presionados se realiza el slot voltear
     connect(pantalla->ui->tarjeta01,SIGNAL(clicked()),this,SLOT(voltearTarjeta()));//1
     connect(pantalla->ui->tarjeta02,SIGNAL(clicked()),this,SLOT(voltearTarjeta()));
     connect(pantalla->ui->tarjeta03,SIGNAL(clicked()),this,SLOT(voltearTarjeta()));
@@ -126,10 +126,10 @@ void Juego::voltearTarjeta(){
       }
 }
 
-void Juego::definirCoincidencia(){
+void Juego::definirCoincidencia(){// define si las imagenes presionadas son las mismas
     if (distribuirTarjeta[ actualTarjeta->objectName()]==distribuirTarjeta[anteriorTarjeta->objectName()]){
-         jugadorGeneral->puntaje+=5;
-          pantalla->ui->nombre->setText(jugadorGeneral->nombre);
+         jugadorGeneral->puntaje+=2;// si las son se suman dos puntos al jugador
+          pantalla->ui->nombre->setText(jugadorGeneral->nombre);//se muestra en pantalla
 
           pantalla->ui->puntaje->setText(QString::number(jugadorGeneral->puntaje));
           parejasRestantes--;
@@ -142,8 +142,8 @@ void Juego::definirCoincidencia(){
           //definirResultadoFinal();aq2
 
       }
-      else{
-          jugadorGeneral->puntaje-=5;
+      else{//sino entonces ee restan dos puntos
+          jugadorGeneral->puntaje-=2;
           pantalla->ui->nombre->setText( jugadorGeneral->nombre);
           pantalla->ui->puntaje->setText(QString::number(jugadorGeneral->puntaje));
 
@@ -179,7 +179,7 @@ void Juego::turno(){
 
 }
 
-Jugador *Juego::cambioDeJugador(){
+Jugador *Juego::cambioDeJugador(){//hace un cambio de turno de jugador
 
 
     if(jugador1->turno==true){

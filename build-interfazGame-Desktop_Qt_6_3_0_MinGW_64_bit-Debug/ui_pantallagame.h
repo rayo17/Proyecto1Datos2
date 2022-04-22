@@ -63,13 +63,20 @@ public:
 "\n"
 "}\n"
 "#puntaje{\n"
-" color:white\n"
+" 	color : white;\n"
+"    qproperty-alignment: AlignCenter;\n"
+"    background: teal;\n"
+"    border :3px solid silver;\n"
+"   border-radius: 13px\n"
 "}\n"
 "#nombre{\n"
 "	color:white;\n"
+"\n"
 "}\n"
 "\n"
-"\n"
+"#jugador2{\n"
+"color:white\n"
+"}\n"
 "\n"
 ""));
         tarjeta01 = new QPushButton(PantallaGame);
@@ -101,10 +108,10 @@ public:
         tarjeta08->setGeometry(QRect(670, 230, 151, 131));
         tarjeta09 = new QPushButton(PantallaGame);
         tarjeta09->setObjectName(QString::fromUtf8("tarjeta09"));
-        tarjeta09->setGeometry(QRect(120, 390, 151, 131));
+        tarjeta09->setGeometry(QRect(130, 370, 151, 131));
         tarjeta10 = new QPushButton(PantallaGame);
         tarjeta10->setObjectName(QString::fromUtf8("tarjeta10"));
-        tarjeta10->setGeometry(QRect(310, 390, 151, 131));
+        tarjeta10->setGeometry(QRect(310, 370, 151, 131));
         tarjeta11 = new QPushButton(PantallaGame);
         tarjeta11->setObjectName(QString::fromUtf8("tarjeta11"));
         tarjeta11->setGeometry(QRect(490, 390, 151, 131));
@@ -113,25 +120,25 @@ public:
         tarjeta12->setGeometry(QRect(670, 390, 151, 131));
         tarjeta13 = new QPushButton(PantallaGame);
         tarjeta13->setObjectName(QString::fromUtf8("tarjeta13"));
-        tarjeta13->setGeometry(QRect(120, 540, 151, 131));
+        tarjeta13->setGeometry(QRect(130, 520, 151, 131));
         tarjeta14 = new QPushButton(PantallaGame);
         tarjeta14->setObjectName(QString::fromUtf8("tarjeta14"));
-        tarjeta14->setGeometry(QRect(310, 540, 151, 131));
+        tarjeta14->setGeometry(QRect(310, 520, 151, 131));
         tarjeta15 = new QPushButton(PantallaGame);
         tarjeta15->setObjectName(QString::fromUtf8("tarjeta15"));
-        tarjeta15->setGeometry(QRect(490, 540, 151, 131));
+        tarjeta15->setGeometry(QRect(490, 530, 151, 131));
         tarjeta16 = new QPushButton(PantallaGame);
         tarjeta16->setObjectName(QString::fromUtf8("tarjeta16"));
-        tarjeta16->setGeometry(QRect(680, 540, 151, 131));
+        tarjeta16->setGeometry(QRect(670, 530, 151, 131));
         cronometro = new QLabel(PantallaGame);
         cronometro->setObjectName(QString::fromUtf8("cronometro"));
-        cronometro->setGeometry(QRect(850, 220, 181, 31));
+        cronometro->setGeometry(QRect(880, 210, 181, 31));
         puntaje = new QLabel(PantallaGame);
         puntaje->setObjectName(QString::fromUtf8("puntaje"));
-        puntaje->setGeometry(QRect(880, 200, 63, 20));
+        puntaje->setGeometry(QRect(920, 110, 61, 41));
         nombre = new QLabel(PantallaGame);
         nombre->setObjectName(QString::fromUtf8("nombre"));
-        nombre->setGeometry(QRect(890, 100, 63, 20));
+        nombre->setGeometry(QRect(840, 110, 81, 31));
 
         retranslateUi(PantallaGame);
 
@@ -159,8 +166,8 @@ public:
         tarjeta15->setText(QCoreApplication::translate("PantallaGame", "14", nullptr));
         tarjeta16->setText(QCoreApplication::translate("PantallaGame", "15", nullptr));
         cronometro->setText(QCoreApplication::translate("PantallaGame", "cronometro", nullptr));
-        puntaje->setText(QCoreApplication::translate("PantallaGame", "TextLabel", nullptr));
-        nombre->setText(QCoreApplication::translate("PantallaGame", "TextLabel", nullptr));
+        puntaje->setText(QString());
+        nombre->setText(QCoreApplication::translate("PantallaGame", "Jugador 1", nullptr));
     } // retranslateUi
 
 };
