@@ -5,7 +5,8 @@
 
 #include<QMessageBox>
 
-//#include<paquete.h>
+
+
 
 class QTcpSocket;
 class Juego;
@@ -22,9 +23,12 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
-    void envia(const QString &line);
-    void enviarNombreJugador1(QTextStream &,const QString &);
-    void enviarNombreJugador2();
+    void envia();
+
+    void enviaImagenes();
+
+
+
 
 
 
@@ -34,13 +38,14 @@ private slots:
     void on_start_clicked();
 
     void on_quit_clicked();
+    //void leerImagen();
 
 private:
     Ui::Widget *ui;//objeto ui
     QTcpSocket *Csocket;//objeto socket
     Juego *game;
     QMessageBox messageBx;
-    QTextStream stream;
-    //Paquete datosEnviados;
+
+    //PaqueteEnviado datosEnviados;
 };
 #endif // WIDGET_H

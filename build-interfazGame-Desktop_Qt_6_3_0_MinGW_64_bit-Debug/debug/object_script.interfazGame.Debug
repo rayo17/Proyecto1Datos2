@@ -1,0 +1,12 @@
+debug/json.o
+debug/juego.o
+debug/jugador.o
+debug/main.o
+debug/mensajedatas.o
+debug/pantallagame.o
+debug/widget.o
+debug/qrc_imagenes.o
+debug/moc_juego.o
+debug/moc_jugador.o
+debug/moc_pantallagame.o
+debug/moc_widget.o

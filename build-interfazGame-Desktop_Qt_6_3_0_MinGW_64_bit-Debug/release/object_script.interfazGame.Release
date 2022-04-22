@@ -1,0 +1,12 @@
+release/json.o
+release/juego.o
+release/jugador.o
+release/main.o
+release/mensajedatas.o
+release/pantallagame.o
+release/widget.o
+release/qrc_imagenes.o
+release/moc_juego.o
+release/moc_jugador.o
+release/moc_pantallagame.o
+release/moc_widget.o
